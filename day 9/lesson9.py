@@ -1,0 +1,5 @@
+print(9>8)
+print(15>16)
+print(17<21)
+print(21<187)
+print(121>222)
