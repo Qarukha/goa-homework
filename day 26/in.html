@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Talent Release Form</title>
+    <style>
+        form {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .form-group label {
+            width: 48%;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .address-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .address-group label {
+            width: 48%;
+            margin-top: 5px;
+        }
+        .address-group input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .full-width {
+            width: 100%;
+        }
+        #signature-pad {
+            border: 1px solid black;
+            width: 100%;
+            height: 150px;
+            margin-top: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Talent Release Form</h2>
+    <form action="/submit_talent_release" method="post">
+        <label for="programTitle">
+            Program Title:
+            <input type="text" id="programTitle" name="programTitle" required>
+        </label>
+
+        <div class="form-group">
+            <label for="producerFirstName">
+                Producer's First Name:
+                <input type="text" id="producerFirstName" name="producerFirstName" required>
+            </label>
+            <label for="producerLastName">
+                Producer's Last Name:
+                <input type="text" id="producerLastName" name="producerLastName" required>
+            </label>
+        </div>
+
+        <label for="producerPhone">
+            Producer's Phone Number:
+            <input type="tel" id="producerPhone" name="producerPhone" required>
+        </label>
+
+        <label for="date">
+            Date:
+            <input type="date" id="date" name="date" required>
+        </label>
+
+        <div class="form-group">
+            <label for="talentFirstName">
+                Talent's First Name:
+                <input type="text" id="talentFirstName" name="talentFirstName" required>
+            </label>
+            <label for="talentLastName">
+                Talent's Last Name:
+                <input type="text" id="talentLastName" name="talentLastName" required>
+            </label>
+        </div>
+
+        <label for="signatureDate">
+            Date:
+            <input type="date" id="signatureDate" name="signatureDate" required>
+        </label>
+
+        <div class="address-group">
+            <label for="streetAddress" class="full-width">
+                Street Address:
+                <input type="text" id="streetAddress" name="streetAddress" required>
+            </label>
+            <label for="streetAddress2" class="full-width">
+                Street Address Line 2:
+                <input type="text" id="streetAddress2" name="streetAddress2">
+            </label>
+            <label for="city">
+                City:
+                <input type="text" id="city" name="city" required>
+            </label>
+            <label for="region">
+                Region:
+                <input type="text" id="region" name="region" required>
+            </label>
+            <label for="postalCode">
+                Postal/Zip Code:
+                <input type="text" id="postalCode" name="postalCode" required>
+            </label>
+            <label for="country">
+                Country:
+                <input type="text" id="country" name="country" required>
+            </label>
+        </div>
+
+        <label for="talentSignature">Talent's Signature:</label>
+        <canvas id="signature-pad"></canvas>
+
+        <input type="submit" value="Submit" class="submit-btn">
+    </form>
+
+    

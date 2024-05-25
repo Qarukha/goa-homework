@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Information Form</title>
+</head>
+<body>
+    <h2>User Information Collection Form</h2>
+    <p>Please provide your personal information in the fields below. This information will help us to better understand and assist you. Your details will be kept confidential and will not be shared with any third parties.</p>
+    
+    <form action="/submit" method="post">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        
+        <label for="extraInfo">Additional Information:</label><br>
+        <textarea id="extraInfo" name="extraInfo" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

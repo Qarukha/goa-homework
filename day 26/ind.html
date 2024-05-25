@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Withdrawal Form</title>
+    <style>
+        form {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .form-group label {
+            width: 48%;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .course-details {
+            margin-top: 20px;
+        }
+        .course-details h3 {
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Course Withdrawal Form</h2>
+    <form action="/submit_withdrawal" method="post">
+        <div class="form-group">
+            <label for="firstName">
+                First Name:
+                <input type="text" id="firstName" name="firstName" required>
+            </label>
+            <label for="lastName">
+                Last Name:
+                <input type="text" id="lastName" name="lastName" required>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="studentId">
+                Student ID:
+                <input type="number" id="studentId" name="studentId" required>
+            </label>
+            <label for="semester">
+                Semester:
+                <input type="text" id="semester" name="semester" required>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="year">
+                Year:
+                <input type="number" id="year" name="year" required>
+            </label>
+        </div>
+
+        <div class="course-details">
+            <h3>Withdraw from the following courses:</h3>
+            <div class="form-group">
+                <label for="courseCode">
+                    Course Code:
+                    <input type="text" id="courseCode" name="courseCode" required>
+                </label>
+                <label for="courseTitle">
+                    Course Title:
+                    <input type="text" id="courseTitle" name="courseTitle" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="sectionNumber">
+                    Section Number:
+                    <input type="number" id="sectionNumber" name="sectionNumber" required>
+                </label>
+                <label for="credits">
+                    Credits:
+                    <input type="number" id="credits" name="credits" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="instructorFirstName">
+                    Instructor's First Name:
+                    <input type="text" id="instructorFirstName" name="instructorFirstName" required>
+                </label>
+                <label for="instructorLastName">
+                    Instructor's Last Name:
+                    <input type="text" id="instructorLastName" name="instructorLastName" required>
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="studentSignature">
+                Student's Signature:
+                <input type="text" id="studentSignature" name="studentSignature" required>
+            </label>
+        </div>
+
+        <input type="submit" value="Submit Withdrawal" class="submit-btn">
+    </form>
+</body>
+</html>
+
+
