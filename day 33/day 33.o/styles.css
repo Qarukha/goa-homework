@@ -1,0 +1,10 @@
+ul {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+}
+
+
+ul li {
+    margin-bottom: 10px;
+    list-style-type: none; 
+}

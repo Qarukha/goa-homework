@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: none; 
+    background-color: cyan; 
+}
+th {
+    background-color: cyan;
+    color: black;
+}
+.row-two td {
+    color: green; 
+}

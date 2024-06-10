@@ -1,0 +1,7 @@
+.example-text {
+    font-size: 24px;
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    line-height: 1.5; 
+    word-spacing: 5px;                              
+}
